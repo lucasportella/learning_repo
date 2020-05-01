@@ -1,0 +1,5 @@
+nome=str(input('Olá, qual o seu nome? '))
+print(nome)
+peso=int(input('qual o seu peso? '))
+print(peso)
+print('Olá {}, seja bem-vindo ao curso!'.format(nome))
