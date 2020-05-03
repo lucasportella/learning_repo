@@ -3,7 +3,7 @@
 - [ ] Internet
 - [x] DNS
 - [ ] Git/Github
-- [ ] Markdown
+- [x] Markdown
 - [ ] Python
 - [ ] HTML
 - [ ] CSS
