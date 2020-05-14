@@ -9,4 +9,4 @@ while c != 1:
         print('{}x'.format(c), end='')
     else:
         print('{}'.format(c), end='')
-print(' O fatorial de {} é {}.'.format(d,num))
+print('\nO fatorial de {} é {}.'.format(d,num))

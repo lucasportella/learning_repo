@@ -1,12 +1,13 @@
 '''fazer com if dentro do print
 fazer com recebe multiplicação *= ou x = x * y'''
-n = int(input('Digite um número para calcular seu fatorial: '))
-c = n
-f = 1
-print('Calculando {}! = '.format(n), end='')
+num = int(input('Digite um valor p/ ver seu fatorial: '))
+c = num - 1
+d = num
+f = num + 1
 while c > 0:
-    print('{}'.format(c),end='')
-    print('x ' if c > 1 else ' = ', end='')
-    f*= c
+    num *= c
+f -= 1
+    print('{} x '.format(f) if f > 2 else '2 x 1 = {}'.format(num),end='')
     c -= 1
-print('{}'.format(f))
+print('\nFatorial de {}! = {}'.format(d,num) if d != 0 else 'Fatorial de 0! = 1')
+
