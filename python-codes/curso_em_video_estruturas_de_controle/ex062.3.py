@@ -1,7 +1,7 @@
 a1 = int(input('Primeiro termo: '))
 r = int(input('Razão: '))
-c2 = 10
 c = 0
+c2 = 10
 d = 0
 while d == 0:
     while c < 10:
@@ -18,4 +18,5 @@ while d == 0:
         a1 += r
 if d == 1:
     print('FIM')
+    print('Total de termos:',c)
 
