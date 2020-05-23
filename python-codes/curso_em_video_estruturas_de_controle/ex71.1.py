@@ -1,2 +1,20 @@
-saque = int(input('Valor do saque: '))
-print(saque // 50)
+saque = int(input('Valor do saque: R$'))
+notas = saque
+while saque != 0:
+    if saque % 50 >= 0:
+        notas = saque
+        if notas // 50 != 0: print(f'Total de {notas//50} notas de R$50,00')
+        saque = saque % 50
+    if saque % 20 >= 0:
+        notas = saque
+        if notas // 20 != 0: print(f'Total de {notas//20} notas de R$20,00')
+        saque = saque % 20
+    if saque % 10 >= 0:
+        notas = saque
+        if notas // 10 != 0: print(f'Total de {notas//10} notas de R$10,00')
+        saque = saque % 10
+    if saque % 1 >= 0:
+        notas = saque
+        if notas // 1 != 0: print(f'Total de {notas//1} notas de R$1,00')
+        saque = saque % 1
+
