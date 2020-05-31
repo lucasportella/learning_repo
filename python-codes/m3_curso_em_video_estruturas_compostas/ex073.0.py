@@ -8,5 +8,5 @@ print(f'Os 4 últimos são: {tabela[-4:]}')
 print('-'*60)
 print(f'Times em ordem alfabética: {sorted(tabela)}')
 print('-'*60)
-print(f'O Chapecoense está na {tabela.index("Chapecoense")}ª posição.')
+print(f'O Chapecoense está na {tabela.index("Chapecoense")+1}ª posição.')
 
