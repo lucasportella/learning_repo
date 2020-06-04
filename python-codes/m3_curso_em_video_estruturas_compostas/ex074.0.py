@@ -1,5 +1,5 @@
 import random
-lista = random.sample(range(0,11), 5)
+lista = tuple(random.sample(range(0,11), 5))
 print('Os valores sorteados foram',end=' ')
 for c in range(0,5):
     print(f'{lista[c]}',end=' ')
