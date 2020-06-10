@@ -1,4 +1,6 @@
-lista = ('APRENDER','PROGRAMAR','LINGUAGEM','PYTHON','CURSO','GRATIS','ESTUDAR','PRATICAR','TRABALHAR','MERCADO','PROGRAMADOR','FUTURO')
+lista = ('APRENDER','PROGRAMAR','LINGUAGEM','PYTHON',
+         'CURSO','GRATIS','ESTUDAR','PRATICAR','TRABALHAR',
+         'MERCADO','PROGRAMADOR','FUTURO')
 for c in lista:
     print(f'\nNa palavra {c} temos ',end='')
     if c.count('A') >= 1:
