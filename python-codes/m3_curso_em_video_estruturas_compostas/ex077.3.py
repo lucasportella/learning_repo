@@ -1,5 +1,5 @@
 lista = ('APRENDER','PROGRAMAR','LINGUAGEM','PYTHON',
-         'CURSO','GRATIS','ESTUDAR','PRATICAR',
+         'CURSO','GRÁTIS','ESTUDAR','PRATICAR',
          'TRABALHAR','MERCADO','PROGRAMADOR','FUTURO')
 for c in lista:
     print(f'\nNa palavra {c} temos ',end='')
