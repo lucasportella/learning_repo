@@ -1,6 +1,7 @@
 val = ()
 valpar = 0
 valparcum = ()
+print(type(val))
 for c in range(0,4):
     val += (int(input('Digite um número: ')),)
     valpar = val[c]
