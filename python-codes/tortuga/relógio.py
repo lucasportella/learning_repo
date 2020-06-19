@@ -1,0 +1,18 @@
+import turtle
+wn = turtle.Screen()
+wn.bgcolor('lightgreen')
+tutu = turtle.Turtle()
+tutu.color('blue')
+tutu.shape('turtle')
+tutu.stamp()
+for c in range(0,12):
+    tutu.penup()
+    tutu.forward(100)
+    tutu.pendown()
+    tutu.forward(10)
+    tutu.penup()
+    tutu.forward(20)
+    tutu.stamp()
+    tutu.backward(130)
+    tutu.right(30)
+wn.exitonclick()
