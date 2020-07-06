@@ -1,10 +1,4 @@
-matriz = [[0,1,2],
-          [0,1,2],
-          [0,1,2]]
+matriz = [[0,0,0,1,1,1,2,2,2],[0,1,2,0,1,2,0,1,2]]
 lista = []
-
-for c in matriz:
-    for d in c:
-        print(f'{c[d], c[0]}')
-        print(f'{c[d], c[1]}')
-        print(f'{c[d], c[2]}')
+for c in range(9):
+    lista.append(int(input(f'Digite um valor para [{matriz[0][c],matriz[1][c]}]:')))
