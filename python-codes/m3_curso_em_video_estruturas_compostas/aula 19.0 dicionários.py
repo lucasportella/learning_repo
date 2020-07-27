@@ -21,11 +21,16 @@ print(brasil[1]['uf'])'''
 estado = {}
 brasil = []
 for c in range(0,3):
-    estado['uf'] = str(input('Unidade Federativa: '))
-    estado['sigla'] = str(input('Sigla do Estado: '))
+    estado['UF'] = str(input('Unidade Federativa: '))
+    estado['Sigla'] = str(input('Sigla do Estado: '))
     brasil.append(estado.copy())
+
+print('-='*30)
 print(brasil)
-print(estado)
+print('-='*30)
+
 for e in brasil:
-    for k in e.values():
-        print(f'{k}')
+    for k, v in e.items():
+        print(f'{k}:',end=' ')
+        print(f'{v}')
+    print('------------')
