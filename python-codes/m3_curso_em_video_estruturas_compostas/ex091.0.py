@@ -11,9 +11,6 @@ for c,v in jogo.items():
     sleep(0.5)
 ranking = []
 ranking = sorted(jogo.items(), key=itemgetter(1),reverse=True)
-print(type(ranking[0]))
-print(ranking)
-for c in ranking:
-        print(f'O {c[0]} tirou {c[1]}.')
-
-
+print('-'*50)
+for c, v in enumerate(ranking):
+    print(f'{c+1}º Lugar foi do {v[0]} que tirou {v[1]}.')
