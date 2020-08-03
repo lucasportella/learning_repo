@@ -1,5 +1,4 @@
-dicio = {}
-dicio["Nome"] = str(input('Nome do jogador: '))
+dicio = {"Nome": str(input('Nome do jogador: '))}
 partidas = int(input(f'Quantas partidas {dicio["Nome"]} jogou? '))
 lista = []
 for c in range(partidas):
