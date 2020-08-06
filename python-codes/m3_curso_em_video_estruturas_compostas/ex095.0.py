@@ -25,7 +25,18 @@ while True:
         break
 
 print('-='*30)
-print(jogadores)
-print(dicio)
-print('-='*30)
+
+
 print(f'{"cod":<4}{"nome":<15}{"gols":<15}{"total"}')
+contador = 0
+for c in jogadores:
+        c["Gols"] = str(c["Gols"])
+        print(f'  {contador} {c["Nome"]:<15}{c["Gols"]:<15}{c["Total"]:<15}',end='')
+        contador += 1
+        print()
+contador = 0
+print('-'*60)
+
+while True:
+
+
