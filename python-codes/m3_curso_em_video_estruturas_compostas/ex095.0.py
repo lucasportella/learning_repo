@@ -1,42 +1,37 @@
-jogadores = []
+geral = []
 continuar = ' '
-while True:
-    dicio = {"Nome": str(input('Nome do jogador: '))}
-    partidas = int(input(f'Quantas partidas {dicio["Nome"]} jogou? '))
-    sublista_gols = []
-    for c in range(partidas):
-        dicio["Gols"] = int((input(f'Quantos gols na partida {c+1}: ')))
-        sublista_gols.append(dicio["Gols"])
-        dicio["Gols"] = sublista_gols
-        total = int()
-        for c in sublista_gols:
-            total += c
-        dicio["Total"] = total
-    jogadores.append(dicio.copy())
 
-    print('-'*40)
-    while True:
-        continuar = str(input('Deseja continuar? [S/N] ')).upper()
-        if continuar == 'S':
+while True:
+    total_gols_ind = 0
+    dados = {}
+    dados['Nome'] = input('Nome do jogador: ')
+    dados['Jogos'] = int(input(f'Quantas partidas {dados["Nome"]} jogou? '))
+    gols_indiv = []
+    for c in range(0,dados['Jogos']):
+        gols_indiv.append(int(input(f'Quantos gols na partida {c+1}? ')))
+    dados['Gols'] = gols_indiv
+    for c in range(0,len(gols_indiv)):
+        total_gols_ind += gols_indiv[c]
+    dados['Total'] = total_gols_ind
+    geral.append(dados.copy())
+
+    while continuar not in 'S' or continuar not in 'N':
+        continuar = str(input('Deseja continuar? [S/N] ')).upper().strip()
+        if continuar in 'S':
             break
-        elif continuar == 'N':
+        if continuar in 'N':
             break
-    if continuar == 'N':
+    if continuar in 'N':
         break
-
 print('-='*30)
-
-
-print(f'{"cod":<4}{"nome":<15}{"gols":<15}{"total"}')
-contador = 0
-for c in jogadores:
-        c["Gols"] = str(c["Gols"])
-        print(f'  {contador} {c["Nome"]:<15}{c["Gols"]:<15}{c["Total"]:<15}',end='')
-        contador += 1
-        print()
-contador = 0
-print('-'*60)
-
+print(f'{"cod":<4}{"nome":<15}{"gols":<20}total')
+print('-'*50)
+for c in range(0,len(geral)):
+    print(f'{(c+1):>3} {geral[c]["Nome"]:<15}{str(geral[c]["Gols"]):<20}{geral[c]["Total"]}')
+print('-'*50)
 while True:
-
-
+    escolha = int(input('Mostrar dados de qual jogador? (999 para parar) '))
+    if (escolha - 1) > len(geral) or (escolha - 1) < 0:
+        escolha = int(input('Mostrar dados de qual jogador? (999 para parar) '))
+    if (escolha -1) < len(geral) and (escolha -1) > 0:
+        print(f'-- LEVANTAMENTO DO JOGADOR {geral[escolha - 1]["Nome"]}')
