@@ -1,10 +1,11 @@
-def escreva(parâmetro):
-    print('~~',end='')
-    print('~' * len(parâmetro))
-    print(f' {parâmetro}')
-    print('~~',end='')
-    print('~' * len(parâmetro))
+def escreva(msg):
+    tamanho = len(msg) + 4
+    print('~' * tamanho)
+    print(f' {msg}')
+    print('~' * tamanho)
 
-escreva(f'{"Lucas Portella"}')
-escreva(f'{"Curso de Python no Youtube"}')
-escreva(f'{"CeV"}')
+
+escreva('Lucas Portella')
+escreva('Curso em Vídeo no Youtube')
+escreva('CeV')
+
