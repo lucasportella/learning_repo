@@ -3,14 +3,16 @@ def contador(inicio, fim, passo):
     if passo == 0:
         passo = 1
     if fim >= inicio:
+        print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
         for c in range(inicio,fim+1,passo):
-            #sleep(0.3)
+            sleep(0.3)
             print(c,end=' ')
     elif fim < inicio:
         if passo > 0:
             passo = -passo
+        print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
         for c in range(inicio,fim-1,passo):
-            #sleep(0.3)
+            sleep(0.3)
             print(c,end=' ')
 
     print('FIM!')
@@ -24,4 +26,3 @@ inicio = int(input('Início: '))
 fim = int(input('Fim: '))
 passo = int(input('Passo: '))
 contador(inicio,fim,passo)
-print(f'Contagem de {inicio} até {fim} de {passo} em {passo}.')
