@@ -5,4 +5,8 @@ def even_verifier(number):
         return False
 
 
-print(even_verifier(int(input("Type a number to know if it's even or not: "))))
+num = int(input("Type a number: "))
+if even_verifier(num):
+    print("It's even!")
+else:
+    print("It's odd!")
