@@ -1,14 +1,14 @@
 def factorial(number):
-    print(f'{number} x {number - 1} x',end=' ')
-    c = number - 1
-    result = number * (number - 1)
-    while c > 1:
-        c -= 1
-        print(f'{c}',end=' ')
-        if c > 1:
-            print('x',end=' ')
-        result = result * c
-    print(f'= {result}')
+    decrease_number = number
+    result = 1
+    while decrease_number > 0:
+        if decrease_number > 1:
+            print(f'{decrease_number} x ', end='')
+        else:
+            print('1 = ', end='')
+        result *= decrease_number
+        decrease_number -= 1
+    print(result)
 
 
 factorial(int(input('Digit a number for factorization: ')))
