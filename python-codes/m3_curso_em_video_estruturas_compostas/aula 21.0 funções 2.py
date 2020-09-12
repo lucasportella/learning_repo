@@ -1,14 +1,8 @@
-def factorial(number):
-    decrease_number = number
+def factorial(number=1):
     result = 1
-    while decrease_number > 0:
-        if decrease_number > 1:
-            print(f'{decrease_number} x ', end='')
-        else:
-            print('1 = ', end='')
-        result *= decrease_number
-        decrease_number -= 1
-    print(result)
+    for c in range(number,0,-1):
+        result *= c
+    return result
 
 
-factorial(int(input('Digit a number for factorization: ')))
+print(factorial(int(input('Digit a number for factorization: '))))
