@@ -1,4 +1,10 @@
 def fatorial(número, show=0):
+    """
+    --> Calcula o fatorial de um número
+    :param número: O número a ser calculado
+    :param show: Mostra o cálculo do fatorial
+    """
+
     resultado = 1
 
     if show == True:
@@ -25,4 +31,4 @@ def fatorial(número, show=0):
         print(resultado)
 
 
-fatorial(int(input("Número para fatorial: ")),show=False)
+fatorial(int(input("Número para fatorial: ")),show=True)
