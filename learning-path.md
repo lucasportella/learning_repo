@@ -7,11 +7,12 @@
 - [x] Markdown
 
 - [ ] Python
+- [ ] Shell script
+- [ ] C
 
 - [ ] HTML
 - [ ] CSS
 - [ ] JavaScript
-- [ ] PHP
 
 - [ ] Java
 - [ ] Kotlin
