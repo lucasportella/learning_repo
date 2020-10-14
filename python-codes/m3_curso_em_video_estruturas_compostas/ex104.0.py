@@ -1,13 +1,30 @@
 def leiaInt(texto):
-    numero = ''
-    while numero is not int:
-        numero = (input(texto))
-        if numero.isnumeric():
-            numero = int(numero)
-            return numero
-        if numero is not int:
-            print("ERRO! Digite um número inteiro válido.")
+    while True:
+        try:
+           inteiro = int(input(texto))
+        except KeyboardInterrupt:
+            print('O usuário preferiu não digitar esse número')
+            break
+        except:
+            print('ERRO: por favor, digite um número inteiro válido.')
+            continue
+        else:
+            return inteiro
+
+def leiaFloat(texto):
+    while True:
+        try:
+            real = float(input(texto))
+        except KeyboardInterrupt:
+            print('O usuário preferiu não digitar esse número')
+            continue
+        except:
+            print('ERRO: por favor, digite um número real válido.')
+            continue
+        else:
+            return real
         
 
-n = leiaInt('Digite um número: ')
-print(f'Você acabou de digitar o número {n}')
+inteiro = leiaInt('Digite um número inteiro: ')
+real = leiaFloat('Digite um número real: ')
+print(f'O valor inteiro digitado foi {inteiro} e o real foi {real}')
