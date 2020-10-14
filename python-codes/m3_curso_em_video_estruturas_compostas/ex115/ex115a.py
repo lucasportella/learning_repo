@@ -17,7 +17,7 @@ while flag == False:
         continue
     else:
          if opção < 1 or opção > 3:
-             print('ERRO: Número digitado fora do interválo!')
+             print('ERRO: Número digitado fora do intervalo!')
              continue
          elif opção == 1:
              print('-' * 60)
